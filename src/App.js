@@ -1,14 +1,13 @@
 import logo from "./logo.svg";
 import "./App.css";
+import Home from "./pages/home";
 
-function App() {
-	console.log(process.env.REACT_APP_GIPHY);
-
+const App = () => {
 	return (
-		<div>
-			<header></header>
+		<div classname="App">
+			<Home />
 		</div>
 	);
-}
+};
 
 export default App;

@@ -1,11 +1,15 @@
-import logo from "./logo.svg";
 import "./App.css";
-import Home from "./pages/home";
+import TitleWidget from "./components/title/index";
+import ImageWidget from "./components/images/index";
+import gif from "./components/gif-api";
 
 const App = () => {
 	return (
-		<div classname="App">
-			<Home />
+		<div className="App">
+			<input />
+			<button>Search</button>
+			<TitleWidget title={gif.title} />
+			<ImageWidget url={gif.url} />
 		</div>
 	);
 };

@@ -1,14 +1,17 @@
-import logo from "./logo.svg";
 import "./App.css";
+import TitleWidget from "./components/title/index";
+import ImageWidget from "./components/images/index";
+import gif from "./components/gif-api";
 
-function App() {
-	console.log(process.env.REACT_APP_GIPHY);
-
+const App = () => {
 	return (
-		<div>
-			<header></header>
+		<div className="App">
+			<input />
+			<button>Search</button>
+			<TitleWidget title={gif.title} />
+			<ImageWidget url={gif.url} />
 		</div>
 	);
-}
+};
 
 export default App;

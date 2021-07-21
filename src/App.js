@@ -1,10 +1,12 @@
-//make this app js dummy
-// call index from page home
-// input giphy key
-import "./App.css";
+// import logo from './logo.svg';
+// import './App.css';
 
-const App = () => {
-	return <div className="App"></div>;
-};
+import GiphyPage from "./page/home";
+
+function App() {
+	console.log(process.env.REACT_APP_GIPHY_KEY);
+
+	return <GiphyPage />;
+}
 
 export default App;

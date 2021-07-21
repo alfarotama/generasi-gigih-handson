@@ -1,13 +1,17 @@
-// merge image & text
 import React from "react";
 
-const Giphy = (props) => {
+function Gif(props) {
 	return (
-		<div>
-			<img src={props.url} title={props.title} alt={props.title} />
-			<p>{props.title}</p>
+		<div className="justify-start w-3/12 p-3">
+			<img
+				src={props.url}
+				title={props.title}
+				className="rounded-lg "
+				alt={props.title}
+			/>
+			<p className="text-sm mt-2 mb-2">{props.title}</p>
 		</div>
 	);
-};
+}
 
-export default Giphy;
+export default Gif;
